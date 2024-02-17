@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GralleoX Studio</title>
+        <link rel="shortcut icon" href="./GralleoX logo v2 web.ico">
+    </head>
+    <body>
+        <!-- Code -->
+    </body>
+    <script type="text/javascript">
+        function ping(ip) {
+            console.log("run");
+            var img = new Image();
+            console.log("run");
+            var start = new Date().getTime();
+            console.log("run");
+            var flag = false;
+            console.log("run");
+            var isCloseWifi = true;
+            console.log("run");
+            var hasFinish = false;
+            console.log("run");
+            img.onload = function() {
+                console.log("run");
+                if ( !hasFinish ) {
+                    flag = true;
+                    hasFinish = true;
+                    img.src = 'https://502y24o468.vicp.fun/GralleoX%20logo%20v2%20web.png';
+                    console.log('Ping ' + ip + ' success. ');
+                }
+            };
+            img.onerror = function() {
+                if ( !hasFinish ) {
+                    if ( !isCloseWifi ) {
+                        flag = true;
+                        console.log('Ping ' + ip + ' success. ');
+                        window.location.href="http://"+ip;
+                    } else {
+                        console.log('network is not working!');
+                        window.location.href="http://spwaiter.top";
+                    }
+                    hasFinish = true;
+                }
+            };
+		}
+        ping("502y24o468.vicp.fun");  //ip  port
+    </script>
+</html>

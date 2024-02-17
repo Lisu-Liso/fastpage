@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GralleoX Studio</title>
+        <link rel="shortcut icon" href="./GralleoX logo v2 web.ico">
+    </head>
+    <body>
+        <!-- Code -->
+    </body>
+    <script type="text/javascript">
+        const ping = (url, timeout = 6000) => {
+            return new Promise((reslove, reject) => {
+                const urlRule = new RegExp('(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]');
+                if (!urlRule.test(url)) reject('invalid url');
+                try {
+                    fetch(url)
+                        .then(() => reslove(true))
+                        .catch(() => reslove(false));
+                    setTimeout(() => {
+                        reslove(false);
+                    }, timeout);
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        };
+        ping("http://502y24o468.vicp.fun/")
+            .then(location.href = "http://502y24o468.vicp.fun/")
+            .catch(location.href = "http://spwaiter.top/")
+    </script>
+</html>
