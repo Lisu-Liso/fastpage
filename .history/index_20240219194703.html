@@ -25,16 +25,13 @@
                     hasFinish = true;
                     console.log('Ping ' + ip + ' success. ');
                     console.log(PathValue);
-                    if(PathValue != null && PathValue != undefined && PathValue != '') location.href = "https://502y24o468.vicp.fun/" + PathValue;
-                    else location.href = "https://502y24o468.vicp.fun/";
+                    if(PathValue != null || PathValue != undefined || PathValue != '') location.href = "https://502y24o468.vicp.fun/" + PathValue;
                 }
             };
             img.onerror = function() {
                 if ( !hasFinish ) {
                     console.log('network is not working!');
-                    console.log(PathValue);
-                    if(PathValue != null && PathValue != undefined && PathValue != '') location.href = "https://spwaiter.top/" + PathValue;
-                    else location.href = "https://spwaiter.top/";
+                    if(PathValue != null || PathValue != undefined || PathValue != '') location.href = "https://spwaiter.top/" + PathValue;
                     hasFinish = true;
                 }
             };
