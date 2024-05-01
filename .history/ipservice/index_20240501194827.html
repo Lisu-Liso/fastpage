@@ -4,7 +4,7 @@
         <title>GralleoX Studio</title>
         <link rel="shortcut icon" href="./GralleoX logo v2 web.ico">
     </head>
-    <body id="body">
+    <body>
         <!-- Code -->
     </body>
     <script type="text/javascript">
@@ -25,20 +25,19 @@
                     hasFinish = true;
                     console.log('Ping ' + ip + ' success. ');
                     console.log(PathValue);
-                    var bodyelement = document.getElementById("body");
-                    var element = document.createElement('p')
-                    element.innerHTML = "online";
-                    bodyelement.appendChild(element);
+                    if(PathValue != null && PathValue != undefined && PathValue != '') location.href = "https://502y24o468.vicp.fun/" + PathValue;
+                    else {
+                        var bodyelement=ge
+                        location.href = "https://502y24o468.vicp.fun/";
+                    }
                 }
             };
             img.onerror = function() {
                 if ( !hasFinish ) {
                     console.log('network is not working!');
                     console.log(PathValue);
-                    var bodyelement = document.getElementById("body");
-                    var element = document.createElement('p')
-                    element.innerHTML = "offline";
-                    bodyelement.appendChild(element);
+                    if(PathValue != null && PathValue != undefined && PathValue != '') location.href = "https://spwaiter.top/" + PathValue;
+                    else location.href = "https://spwaiter.top/";
                     hasFinish = true;
                 }
             };

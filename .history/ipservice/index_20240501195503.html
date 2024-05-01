@@ -25,7 +25,7 @@
                     hasFinish = true;
                     console.log('Ping ' + ip + ' success. ');
                     console.log(PathValue);
-                    var bodyelement = document.getElementById("body");
+                    var bodyelement = document.getElementsByClassName("body");
                     var element = document.createElement('p')
                     element.innerHTML = "online";
                     bodyelement.appendChild(element);
@@ -35,7 +35,7 @@
                 if ( !hasFinish ) {
                     console.log('network is not working!');
                     console.log(PathValue);
-                    var bodyelement = document.getElementById("body");
+                    var bodyelement = document.getElementsByClassName("body");
                     var element = document.createElement('p')
                     element.innerHTML = "offline";
                     bodyelement.appendChild(element);
